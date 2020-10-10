@@ -16,21 +16,17 @@ public class MapReduceApplication {
     public static void main(String[] args) throws Exception {
 
         Configuration conf = new Configuration();
-        conf.set("mapreduce.output.textoutputformat.separator", ";"); // CSV format
-        //int reducers_count = 1;
+        conf.set("mapreduce.output.textoutputformat.separator", ";");
         Job job = Job.getInstance(conf, "Count of requests and average bytes");
 
-        job.setJarByClass(DataContainer.class); // Основной класс-контейнер для данных
-        job.setMapperClass(HW1Mapper.class); // Маппер
-        job.setReducerClass(HW1Reducer.class); // Редуктор
-
-        //job.setNumReduceTasks(reducers_count);
+        job.setJarByClass(DataContainer.class);
+        job.setMapperClass(HW1Mapper.class);
+        job.setReducerClass(HW1Reducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(DataContainer.class);
         job.setOutputFormatClass(TextOutputFormat.class);
 
-        // Задаем входную и выходную директории
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
