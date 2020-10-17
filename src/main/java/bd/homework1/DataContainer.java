@@ -2,6 +2,13 @@ package bd.homework1;
 import java.io.*;
 import org.apache.hadoop.io.*;
 
+/**
+ * Хранит в себе 3 значения
+ * 1. Суммарное количество байт по IP адресу
+ * 3. Количество запросов(для вычисления среднего объема данных по IP)
+ * 3. Среднее количество байт по IP адресу
+ */
+
 public class DataContainer implements Writable {
 
     private IntWritable totalBytes;

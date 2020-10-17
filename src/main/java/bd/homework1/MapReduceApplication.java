@@ -15,14 +15,16 @@ public class MapReduceApplication {
 
     public static void main(String[] args) throws Exception {
 
+        if (args.length <2){
+            throw new RuntimeException("You should specify input and output folders!");
+        }
         Configuration conf = new Configuration();
-        conf.set("mapreduce.output.textoutputformat.separator", ";");
-        Job job = Job.getInstance(conf, "Count of requests and average bytes");
+        conf.set("mapreduce.output.textoutputformat.separator", ";"); //CSV format delimeter ;
 
+        Job job = Job.getInstance(conf, "Count of requests and average bytes");
         job.setJarByClass(DataContainer.class);
         job.setMapperClass(HW1Mapper.class);
         job.setReducerClass(HW1Reducer.class);
-
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(DataContainer.class);
         job.setOutputFormatClass(TextOutputFormat.class);

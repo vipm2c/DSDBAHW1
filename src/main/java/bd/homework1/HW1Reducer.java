@@ -7,6 +7,12 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
 
+/**
+ * 1. Производит сумму всех байт полученных от Mapper, и выдаёт суммарное количество байт
+ * 2. Производит сумму количества запросов, полученных от Mapper - суммарное кол-во запросов, полученное с определенного IP
+ * 3. Производит расчет среднего знаечния полученных байт, по определенному IP
+ */
+
 public class HW1Reducer extends Reducer<Text, DataContainer, Text, DataContainer> {
     private IntWritable writableBytes = new IntWritable();
     private IntWritable writableRequests = new IntWritable();

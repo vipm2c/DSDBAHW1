@@ -5,6 +5,13 @@ import org.apache.hadoop.io.*;
 import org.apache.hadoop.mapreduce.Mapper;
 import java.io.*;
 
+/**
+ * Вход: строка из лога
+ * Парсит строку, берет IP-адрес и количество байт
+ * bytes это количество полученных байт
+ * параметры requests и averageBytes передается 1
+ */
+
 public class HW1Mapper extends Mapper<Object, Text, Text, DataContainer> {
 
     private Text ip = new Text();

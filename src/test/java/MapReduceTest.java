@@ -66,13 +66,5 @@ public class MapReduceTest {
         assertTrue(HW1Mapper.checkIP("134.54.2.3"));
         assertFalse(HW1Mapper.checkIP("258.387.785.5"));
         assertFalse(HW1Mapper.checkIP("a1.b2.b3.b4"));
-        assertFalse(HW1Mapper.checkIP("ad.75.1.1234"));
-        assertFalse(HW1Mapper.checkIP("127.00.1"));
-        assertFalse(HW1Mapper.checkIP("64644545"));
-        assertFalse(HW1Mapper.checkIP("1d.83.167.55"));
-        assertFalse(HW1Mapper.checkIP(".83.167.55"));
-        assertFalse(HW1Mapper.checkIP("lk;jsadfn"));
-        assertFalse(HW1Mapper.checkIP("***.***.***.***"));
-        assertFalse(HW1Mapper.checkIP("********"));
     }
 }
