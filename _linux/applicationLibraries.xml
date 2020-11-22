@@ -1,33 +1,9 @@
 <application>
   <component name="libraryTable">
-    <library name="Python 2.7 (HW2-2) interpreter library">
-      <CLASSES>
-        <root url="file://$USER_HOME$/Desktop/HW2-2/venv/lib64/python2.7" />
-        <root url="file://$USER_HOME$/Desktop/HW2-2/venv/lib64/python2.7/lib-dynload" />
-        <root url="file:///usr/lib64/python2.7" />
-        <root url="file:///usr/lib/python2.7" />
-        <root url="file://$USER_HOME$/Desktop/HW2-2/venv/lib/python2.7/site-packages" />
-        <root url="file://$USER_HOME$/.cache/JetBrains/IdeaIC2020.2/python_stubs/2145914957" />
-        <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/python-skeletons" />
-        <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib/2" />
-        <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib/2and3" />
-        <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/third_party/2" />
-        <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/third_party/2and3" />
-      </CLASSES>
+    <library name="Python 2.7 interpreter library">
+      <CLASSES />
       <JAVADOC />
-      <SOURCES>
-        <root url="file://$USER_HOME$/Desktop/HW2-2/venv/lib64/python2.7" />
-        <root url="file://$USER_HOME$/Desktop/HW2-2/venv/lib64/python2.7/lib-dynload" />
-        <root url="file:///usr/lib64/python2.7" />
-        <root url="file:///usr/lib/python2.7" />
-        <root url="file://$USER_HOME$/Desktop/HW2-2/venv/lib/python2.7/site-packages" />
-        <root url="file://$USER_HOME$/.cache/JetBrains/IdeaIC2020.2/python_stubs/2145914957" />
-        <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/python-skeletons" />
-        <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib/2" />
-        <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/stdlib/2and3" />
-        <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/third_party/2" />
-        <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/third_party/2and3" />
-      </SOURCES>
+      <SOURCES />
     </library>
   </component>
 </application>
